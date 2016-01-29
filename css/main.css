@@ -28,18 +28,25 @@ svg{
   }
 }
 
+#right-ear {
+  transition: all 2s linear;
+}
+
+#left-ear {
+  transition: all 2s linear;
+}
+
 #bear:hover #right-ear {
-  animation: up 2s infinite linear;
+  animation: up 1s linear;
 }
 
 #bear:hover #left-ear {
-  animation: up 2s infinite linear;
+  animation: up 1s linear;
 }
 
 #left-eye {
   animation: slide 2s infinite linear alternate;
 }
-
 
 #right-eye {
   animation: slide 2s infinite linear alternate;
