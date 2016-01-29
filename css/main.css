@@ -15,3 +15,42 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+svg{
+  width: 300px;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+#bear:hover #right-ear {
+  animation: up 2s infinite linear;
+}
+
+#bear:hover #left-ear {
+  animation: up 2s infinite linear;
+}
+
+#left-eye {
+  animation: slide 2s infinite linear alternate;
+}
+
+
+#right-eye {
+  animation: slide 2s infinite linear alternate;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0,0);
+  }
+
+  100% {
+    transform: translate(15px, 0);
+  }
+}
